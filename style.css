@@ -1,0 +1,83 @@
+body{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(217,16,57,1) 100%);
+}
+h1,p{
+    font-family: 'Sometype Mono', monospace;
+}
+spam{
+    font-size: 50px;
+}
+.p{
+    font-size: 30px;
+}
+
+.container{
+    display:flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+  border: 5px solid palegoldenrod;
+  margin-top: 50px;
+  padding: ;
+}
+
+@media (max-width:690px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+}
+
+.one,.two,.three{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+   border-radius: 10%;
+    flex:1;
+   max-width: 400px;
+   box-shadow: 10px 10px 5px rgb(229, 163, 229);
+}
+.one.head{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+    padding: 10px;
+}
+.two.head{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+    padding: 10px;
+}
+.three.head{
+    background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );
+    padding: 10px;
+}
+.one.body,.two.body,.three.body{
+    padding:15px;
+}
+.container>.one>.head>h1,.container>.two>.head>h1,.container>.three>.head>h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+.container>.one>.head>p,.container>.two>.head>p,.container>.three>.head>p{
+    text-align: center;
+    margin: 0;
+}
+.container>.one>.body>p,.container>.two>.body>p,.container>.three>.body>p{
+    text-align: left;
+    color:rgb(208, 123, 18);
+}
+.container>.one>.body>button,.container>.two>.body>button,.container>.three>.body>button{
+    position: relative;
+    padding: 5px;
+    margin: 0;
+    margin-left: 35%;
+    border-radius: 25%;
+    width: 30%;
+    color: brown;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+    border: none;
+}
